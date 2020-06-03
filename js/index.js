@@ -40,3 +40,19 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navItems = document.querySelectorAll("a");
+console.log(navItems);                                      //this is the forEach in the lecture.
+navItems[0].textContent = siteContent['nav']['nav-item-1'];
+navItems[0].style.color = 'green';
+navItems[1].textContent = siteContent['nav']['nav-item-2'];
+navItems[1].style.color = 'green';
+navItems[2].textContent = siteContent['nav']['nav-item-3'];
+navItems[2].style.color = 'green';
+navItems[3].textContent = siteContent['nav']['nav-item-4'];
+navItems[3].style.color = 'green';
+navItems[4].textContent = siteContent['nav']['nav-item-5'];
+navItems[4].style.color = 'green';
+navItems[5].textContent = siteContent['nav']['nav-item-6'];
+navItems[5].style.color = 'green';
+
