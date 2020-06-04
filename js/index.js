@@ -109,3 +109,18 @@ contactInfo[2].textContent = siteContent['contact']['email'];
 let footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright'];
 
+const newNav = document.createElement('a');
+newNav.textContent = 'Home';
+newNav.style.color = 'green';
+
+const nav = document.querySelector('nav');
+nav.append(newNav);
+
+const newNav2 = document.createElement('a');
+newNav2.textContent = 'Blog';
+newNav2.style.color = 'green';
+
+const nav2 = document.querySelector('nav');
+nav2.prepend(newNav2);
+
+
