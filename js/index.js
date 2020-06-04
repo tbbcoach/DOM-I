@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navItems = document.querySelectorAll("a");
-//console.log(navItems);                                      //this is the forEach in the lecture.
+//console.log(navItems);                                      
 navItems[0].textContent = siteContent['nav']['nav-item-1'];
 navItems[0].style.color = 'green';
 navItems[1].textContent = siteContent['nav']['nav-item-2'];
@@ -69,6 +69,7 @@ headLine.textContent = siteContent['cta']['h1'];
 let button = document.querySelector('button');
 console.log(button);
 button.textContent = siteContent['cta']['button'];
+button.style.borderRadius = '20px';
 
 let headerPic = document.getElementById('cta-img');
 headerPic.setAttribute('src', siteContent['cta']['img-src']);
@@ -77,6 +78,8 @@ let topHeading = document.querySelectorAll('.top-content .text-content h4');
 console.log(topHeading);
 topHeading[0].textContent = siteContent['main-content']['features-h4'];
 topHeading[1].textContent = siteContent['main-content']['about-h4'];
+topHeading[0].style.textDecoration = 'underline red';
+topHeading[1].style.textDecoration = 'underline red';
 
 let topContent = document.querySelectorAll('.top-content .text-content p');
 console.log(topContent);
@@ -101,6 +104,8 @@ bottomContent[2].textContent = siteContent['main-content']['vision-content'];
 
 let contact = document.querySelector('.contact h4');
 contact.textContent = siteContent['contact']['contact-h4'];
+contact.style.color = 'purple';
+contact.style.backgroundColor = 'orange';
 let contactInfo = document.querySelectorAll('.contact p');
 contactInfo[0].textContent = siteContent['contact']['address'];
 contactInfo[1].textContent = siteContent['contact']['phone'];
@@ -112,6 +117,7 @@ footer.textContent = siteContent['footer']['copyright'];
 const newNav = document.createElement('a');
 newNav.textContent = 'Home';
 newNav.style.color = 'green';
+newNav.style.textDecoration = 'underline';
 
 const nav = document.querySelector('nav');
 nav.append(newNav);
@@ -119,6 +125,7 @@ nav.append(newNav);
 const newNav2 = document.createElement('a');
 newNav2.textContent = 'Blog';
 newNav2.style.color = 'green';
+newNav2.style.textDecoration = 'underline';
 
 const nav2 = document.querySelector('nav');
 nav2.prepend(newNav2);
